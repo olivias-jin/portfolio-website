@@ -1,0 +1,97 @@
+body{
+    
+    background-color: rgb(251, 247, 255);}
+
+#mylogo {
+    margin-top: 40px;
+    padding: 0px;
+    width: 200px;
+    height: 70px;
+}
+
+.navigation {
+    margin-top: -60px;
+    padding: 0px;
+    text-align: right;
+    font-family: Optima, sans-serif ;
+    font-weight: bold;
+    word-spacing: 10px;
+    
+}
+.find {
+    margin-top: 300px;
+    /* margin-bottom: 100px; */
+    text-align:center;
+    font-family: Optima, sans-serif ;
+    font-size: 15px;
+    font-weight: bold;
+    bottom: 0;
+    
+}
+.social{
+    margin-bottom: 100px;
+    text-align: center;
+    bottom: 0;
+}
+
+
+.contact{
+    text-align: center;
+    align-content: center;
+    font-family: Optima, sans-serif ;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Optima, sans-serif;
+    white-space: pre-wrap;
+}
+
+
+input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: #cf6ee7; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.info {
+    text-align: center;
+}
+
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+/* visited link */
+a:visited {
+    color: black;
+  
+  }
+  
+/* mouse over link */
+  a:hover {
+    color: rgb(206, 157, 252);
+  }
+  
+/* selected link */
+a:active {
+    color: blue;
+  }
