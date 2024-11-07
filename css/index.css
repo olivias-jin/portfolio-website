@@ -1,15 +1,14 @@
-:root { --fontstyle : monospace;
-
+:root {
+    --fontstyle: monospace;
 }
 
-#me{
+#me {
     justify-content: center;
 }
 
-
-body{
-    
-    background-color: rgb(251, 247, 255);}
+body {
+    background-color: rgb(251, 247, 255);
+}
 
 #mylogo {
     margin-top: 40px;
@@ -22,93 +21,62 @@ body{
     margin-top: -60px;
     padding: 0px;
     text-align: right;
-    font-family: Optima, sans-serif ;
+    font-family: Optima, sans-serif;
     font-weight: bold;
     word-spacing: 10px;
-    
 }
 
-.container{   
+.container {
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-   
+    /* grid-template-columns: 1fr 1fr 1fr;  // 이 부분은 필요 없음, flexbox만 사용 */
 }
 
 .myimage img {
-    border-radius: 50% !important;
-    width: 150px !important;
-    height: 150px !important;
-    object-fit: cover !important;
+    border-radius: 50% !important; /* 동그랗게 만들기 */
+    width: 150px !important; /* 너비 */
+    height: 150px !important; /* 높이 */
+    object-fit: cover !important; /* 잘리지 않도록 */
 }
 
-.Text{
+.Text {
+    font-family: Optima, sans-serif;
+}
 
-font-family:Optima, sans-serif ; }
-
-
-/* .button{
-    background-color: rgb(189, 118, 255);
-    border: none;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 12px;
-    
-} */
-
-.center{
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
 }
-
-
-
 
 .find {
     margin-top: 300px;
-    /* margin-bottom: 100px; */
-    text-align:center;
-    font-family: Optima, sans-serif ;
+    text-align: center;
+    font-family: Optima, sans-serif;
     font-size: 15px;
     font-weight: bold;
-    bottom: 0;
-    
 }
 
-
-.social{
+.social {
     margin-bottom: 100px;
     text-align: center;
-    bottom: 0;
 }
 
-
-/* unvisited link */
+/* 링크 스타일 */
 a:link {
     color: black;
-  }
-  
-/* visited link */
+}
+
 a:visited {
     color: black;
-  
-  }
-  
-/* mouse over link */
-  a:hover {
+}
+
+a:hover {
     color: rgb(206, 157, 252);
-  }
-  
-/* selected link */
+}
+
 a:active {
     color: blue;
-  }
+}
