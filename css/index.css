@@ -39,15 +39,11 @@ body{
 
 .myimage {
     border-radius: 50%; /* 동그랗게 만들기 */
-    width: 100px; /* 원하는 크기로 설정 */
-    height: 100px; /* 높이도 동일하게 설정 */
-    object-fit: cover; /* 이미지 비율 유지하며 잘리기 */display: flex;
-    /* border-radius: 50%;
-    width: 200px;
-    height: 200px; */
-    
+    width: 200px; /* 너비 지정 */
+    height: 200px; /* 높이 지정 */
+    object-fit: cover; /* 이미지 비율 유지하며 잘리기 */
+    display: block; /* 이미지를 블록 요소로 설정 (flex 사용은 필요없습니다) */
 }
-
 
 .Text{
 
