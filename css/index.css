@@ -83,3 +83,23 @@ a:hover {
 a:active {
     color: blue;
 }
+
+
+/* 기본 버튼 스타일 */
+.button {
+    display: inline-block;
+    background-color: #bd76ff; /* 버튼 색상 */
+    color: white; /* 텍스트 색상 */
+    padding: 10px 20px; /* 버튼 안의 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
+    border-radius: 12px; /* 둥근 모서리 */
+    font-size: 16px; /* 폰트 크기 */
+    transition: background-color 0.3s, transform 0.3s; /* 효과 전환 */
+}
+
+/* 마우스 오버 시 스타일 */
+.button:hover {
+    background-color: #a06bff; /* 마우스 오버 시 배경 색상 변화 */
+    transform: scale(1.1); /* 마우스 오버 시 크기 증가 */
+}
