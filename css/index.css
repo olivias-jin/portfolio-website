@@ -37,6 +37,12 @@ body{
    
 }
 
+.container img {
+    border-radius: 50%; /* 동그랗게 만들기 */
+    width: 100px; /* 원하는 크기로 설정 */
+    height: 100px; /* 높이도 동일하게 설정 */
+    object-fit: cover; /* 이미지 비율 유지하며 잘리기 */
+}
 
 .myimage {
     display: flex;
