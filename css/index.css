@@ -35,9 +35,10 @@ body {
 }
 
 .myimage img {
+    margin-right: 20px;  /* 이미지와 텍스트 사이의 간격을 설정 */
     border-radius: 50% !important; /* 동그랗게 만들기 */
-    width: 150px !important; /* 너비 */
-    height: 150px !important; /* 높이 */
+    width: 200px !important; /* 너비 */
+    height: 200px !important; /* 높이 */
     object-fit: cover !important; /* 잘리지 않도록 */
 }
 
