@@ -37,12 +37,11 @@ body{
    
 }
 
-.myimage {
-    border-radius: 50%; /* 동그랗게 만들기 */
-    width: 150px; /* 너비 지정 */
-    height: 150px; /* 높이 지정 */
-    object-fit: cover; /* 이미지 비율 유지하며 잘리기 */
-    
+.myimage img {
+    border-radius: 50% !important;
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
 }
 
 .Text{
