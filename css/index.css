@@ -34,7 +34,7 @@ body {
     /* grid-template-columns: 1fr 1fr 1fr;  // 이 부분은 필요 없음, flexbox만 사용 */
 }
 
-.myimage {
+.myimage img {
     /* margin-right: 20px;  이미지와 텍스트 사이의 간격을 설정 */
     border-radius: 50% !important; /* 동그랗게 만들기 */
     width: 200px !important; /* 너비 */
