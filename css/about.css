@@ -1,171 +1,201 @@
-
-body{
-    
-    background-color: rgb(251, 247, 255);}
-
-#mylogo {
-    margin-top: 40px;
-    padding: 0px;
-    width: 200px;
-    height: 70px;
+/* 그라데이션 효과 */
+body {
+  background: linear-gradient(to bottom, #050405, #140c33);
 }
 
+#mylogo {
+  margin-top: 40px;
+  padding: 0px;
+  width: 200px;
+  height: 70px;
+}
+.logo {
+  width: 150px;
+  height: auto;
+}
 .navigation {
-    margin-top: -60px;
-    padding: 0px;
-    text-align: right;
-    font-family: Optima, sans-serif ;
-    font-weight: bold;
-    word-spacing: 10px;
-    
+  margin-top: -60px;
+  padding: 0px;
+  text-align: right;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
+  word-spacing: 10px;
+
+}
+
+//* 링크 스타일 */
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: rgb(206, 157, 252);
+}
+
+a:active {
+  color: rgb(255, 0, 157);
 }
 
 
 .find {
-    margin-top: 300px;
-    /* margin-bottom: 100px; */
-    text-align:center;
-    font-family: Optima, sans-serif ;
-    font-size: 15px;
-    font-weight: bold;
-    bottom: 0;
-    
+  margin-top: 300px;
+  /* margin-bottom: 100px; */
+  text-align: center;
+  font-family: Optima, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  bottom: 0;
+
 }
 
 
-.social{
-    margin-bottom: 100px;
-    text-align: center;
-    bottom: 0;
+.social {
+  margin-bottom: 100px;
+  text-align: center;
+  bottom: 0;
 }
 
-.about{
-    text-align: center;
-    font-family:Optima, sans-serif ; }
-
-.table{
-    margin-left: auto;
-    margin-right: auto;
+.about h1{
+  text-align: center;
+  font-family: Optima, sans-serif;
+  color: #C8ACD6;
 }
 
-.CV{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    border-radius: 5px;
+.about p{
+  text-align: center;
+  font-family: Optima, sans-serif;
+  color: white;
+}
+
+.about h2{
+  text-align: center;
+  font-family: Optima, sans-serif;
+  color: #C8ACD6;
+}
+.page-footer{
+  color: white;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.CV {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
 }
 
 
 .CV:hover {
-    background-color: #cf6ee7; 
-    transform: translateY(-2px); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
-
-.CV:active{
-    background-color: #c958e6; 
-    transform: translateY(1px); 
-    box-shadow: none; 
+  background-color: rgb(206, 157, 252);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s; /* 효과 전환 */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* unvisited link */
-a:link {
-    color: black;
-  }
-  
-/* visited link */
-a:visited {
-    color: black;
-  
-  }
-  
-/* mouse over link */
-  a:hover {
-    color: rgb(206, 157, 252);
-  }
-  
-/* selected link */
-a:active {
-    color: blue;
-  }
-
-  
-@keyframes color-change {
-    from {fill:#edc655;
-    }
-    to {
-        fill: #f76414;;
-    }
+.CV:active {
+  background-color: rgb(206, 157, 252);
+  transition: background-color 0.3s, transform 0.3s; /* 효과 전환 */
+  box-shadow: none;
 }
 
-@keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
+/* 별 애니메이션을 위한 컨테이너 */
+.star {
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  overflow: hidden;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.style {
+  &1 {
+    width: 1px;
+    height: 1px;
+  }
+  &2 {
+    width: 2px;
+    height: 2px;
+  }
+  &3 {
+    width: 3px;
+    height: 3px;
+  }
+}
+
+.opacity {
+  &1 {
+    opacity: 1;
+  }
+  &2 {
+    opacity: 0.5;
+  }
+  &3 {
+    opacity: 0.1;
+  }
+}
+
+.twinkle {
+  &1 {
+    animation-duration: 0.5s;
+    animation-name: twinkling;
+  }
+  &2 {
+    animation-duration: 1s;
+    animation-name: twinkling;
+  }
+  &3 {
+    animation-duration: 1.5s;
+    animation-name: twinkling;
+  }
+  &4 {
+    animation-duration: 2s;
+    animation-name: twinklingWithNoBoxShadow;
+  }
+}
+
+@keyframes twinkling {
+  0% {
+    box-shadow: 0 0 10px 0px rgb(255, 255, 255, 0.1);
   }
 
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  50% {
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255, 0.4);
   }
 
-  .sun {
-    animation: 4s color-change infinite alternate linear;
+  100% {
+    box-shadow: 0 0 10px 0px rgb(255, 255, 255, 0.1);
   }
+}
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
+@keyframes twinklingWithNoBoxShadow {
+  0% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
   }
-
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  20% {
+    background-color: #ffc4c4;
+    box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
   }
-
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
+  80% {
+    background-color: #c4cfff;
+    box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
   }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  100% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
   }
+}
