@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-/* 그라데이션 효과 */
+/* 그라데이션 효과 .*/
 body {
     background: linear-gradient(to bottom, #050405, #140c33);
 }
