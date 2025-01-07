@@ -1,236 +1,250 @@
-<<<<<<< HEAD
-:root { --fontstyle : monospace;
-
+:root {
+    --fontstyle: monospace;
 }
 
-#me{
+#me {
     justify-content: center;
 }
 
-
-body{
-    
-    background-color: rgb(251, 247, 255);}
+/* 그라데이션 효과 */
+body {
+    background: linear-gradient(to bottom, #050405, #140c33);
+}
 
 #mylogo {
     margin-top: 40px;
     padding: 0px;
-    width: 200px;
+    width: 20px;
     height: 70px;
 }
 
+.logo {
+  width: 150px;
+  height: auto;
+}
 .navigation {
     margin-top: -60px;
     padding: 0px;
     text-align: right;
-    font-family: Optima, sans-serif ;
+    font-family: Optima, sans-serif;
     font-weight: bold;
     word-spacing: 10px;
-    
 }
 
-.container{   
+.container {
+    margin-left: 20px !important;
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-   
+    /* grid-template-columns: 1fr 1fr 1fr;  // 이 부분은 필요 없음, flexbox만 사용 */
 }
 
-
-.myimage {
-    display: flex;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    
+.myimage img {
+    border-radius: 50% !important; /* 동그랗게 만들기 */
+    width: 350px !important; /* 너비 */
+    height: 350px !important; /* 높이 */
+    object-fit: cover !important; /* 잘리지 않도록 */
+    margin-right: 20px; /* 이미지와 텍스트 사이의 간격을 설정 */
 }
 
+.Text h1{
+    font-family: Optima, sans-serif;
+    color: #C8ACD6;
+}
 
-.Text{
+.Text p {
+  font-family: Optima, sans-serif;
+  color: white;
+}
 
-font-family:Optima, sans-serif ; }
-
-
-/* .button{
-    background-color: rgb(189, 118, 255);
-    border: none;
-    color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 12px;
-    
-} */
-
-.center{
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
 }
-
-
-
 
 .find {
     margin-top: 300px;
-    /* margin-bottom: 100px; */
-    text-align:center;
-    font-family: Optima, sans-serif ;
+    text-align: center;
+    font-family: Optima, sans-serif;
     font-size: 15px;
     font-weight: bold;
-    bottom: 0;
-    
 }
 
-
-.social{
+.social {
     margin-bottom: 100px;
     text-align: center;
-    bottom: 0;
 }
 
-
-/* unvisited link */
+/* 링크 스타일 */
 a:link {
-    color: black;
-  }
-  
-/* visited link */
-a:visited {
-    color: black;
-  
-  }
-  
-/* mouse over link */
-  a:hover {
-    color: rgb(206, 157, 252);
-  }
-  
-/* selected link */
-a:active {
-    color: blue;
-=======
-:root { --fontstyle : monospace;
-
-}
-
-#me{
-    justify-content: center;
-}
-
-
-body{
-    
-    background-color: rgb(251, 247, 255);}
-
-#mylogo {
-    margin-top: 40px;
-    padding: 0px;
-    width: 200px;
-    height: 70px;
-}
-
-.navigation {
-    margin-top: -60px;
-    padding: 0px;
-    text-align: right;
-    font-family: Optima, sans-serif ;
-    font-weight: bold;
-    word-spacing: 10px;
-    
-}
-
-.container{   
-    margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-   
-}
-
-
-.myimage {
-    display: flex;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    
-}
-
-
-.Text{
-
-font-family:Optima, sans-serif ; }
-
-
-/* .button{
-    background-color: rgb(189, 118, 255);
-    border: none;
     color: white;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 12px;
-    
-} */
-
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
 }
 
-
-
-
-.find {
-    margin-top: 300px;
-    /* margin-bottom: 100px; */
-    text-align:center;
-    font-family: Optima, sans-serif ;
-    font-size: 15px;
-    font-weight: bold;
-    bottom: 0;
-    
-}
-
-
-.social{
-    margin-bottom: 100px;
-    text-align: center;
-    bottom: 0;
-}
-
-
-/* unvisited link */
-a:link {
-    color: black;
-  }
-  
-/* visited link */
 a:visited {
-    color: black;
-  
-  }
-  
-/* mouse over link */
-  a:hover {
+    color: white;
+}
+
+a:hover {
     color: rgb(206, 157, 252);
+}
+
+a:active {
+    color: rgb(255, 0, 157);
+}
+
+
+
+.page-footer{
+  color: white;
+}
+
+/* 기본 버튼 스타일 */
+.button {
+    display: inline-block;
+    background-color: #dcb7ff; /* 버튼 색상 */
+    color: white !important; /* 텍스트 색상 */
+    padding: 10px 20px; /* 버튼 안의 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
+    border-radius: 12px; /* 둥근 모서리 */
+    font-size: 16px; /* 폰트 크기 */
+    transition: background-color 0.3s, transform 0.3s; /* 효과 전환 */
+}
+
+/* 마우스 오버 시 스타일 */
+.button:hover {
+    background-color: #a06bff; /* 마우스 오버 시 배경 색상 변화 */
+    transform: scale(1.1); /* 마우스 오버 시 크기 증가 */
+}
+
+/* 별 애니메이션을 위한 컨테이너 */
+.star {
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    z-index: -1;
   }
   
-/* selected link */
-a:active {
-    color: blue;
->>>>>>> 882229138e957761b0681e84eda4c0872024854e
+  .style {
+    &1 {
+      width: 1px;
+      height: 1px;
+    }
+    &2 {
+      width: 2px;
+      height: 2px;
+    }
+    &3 {
+      width: 3px;
+      height: 3px;
+    }
   }
+  
+  .opacity {
+    &1 {
+      opacity: 1;
+    }
+    &2 {
+      opacity: 0.5;
+    }
+    &3 {
+      opacity: 0.1;
+    }
+  }
+  
+  .twinkle {
+    &1 {
+      animation-duration: 0.5s;
+      animation-name: twinkling;
+    }
+    &2 {
+      animation-duration: 1s;
+      animation-name: twinkling;
+    }
+    &3 {
+      animation-duration: 1.5s;
+      animation-name: twinkling;
+    }
+    &4 {
+      animation-duration: 2s;
+      animation-name: twinklingWithNoBoxShadow;
+    }
+  }
+  
+  @keyframes twinkling {
+    0% {
+      box-shadow: 0 0 10px 0px rgb(255, 255, 255, 0.1);
+    }
+  
+    50% {
+      box-shadow: 0 0 10px 2px rgb(255, 255, 255, 0.4);
+    }
+  
+    100% {
+      box-shadow: 0 0 10px 0px rgb(255, 255, 255, 0.1);
+    }
+  }
+  
+  @keyframes twinklingWithNoBoxShadow {
+    0% {
+      background-color: #ffffff;
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+    }
+    20% {
+      background-color: #ffc4c4;
+      box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+    }
+    80% {
+      background-color: #c4cfff;
+      box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+    }
+    100% {
+      background-color: #ffffff;
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  /* 별동별 컨테이너*/
+
+#shooting-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* 별동별 스타일 */
+.shooting-star {
+    position: absolute;
+    width: 2px;  /* 별 크기 */
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* 빛나는 효과 */
+    opacity: 0;
+    animation: shooting 1s ease-out forwards; /* 별동별 애니메이션 */
+}
+
+/* 별동별 이동 애니메이션 */
+@keyframes shooting {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1); /* 시작 위치 */
+    }
+    70% {
+        opacity: 1;
+        transform: translate(-300px, 300px) scale(1.5); /* 움직임 중간 단계 */
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-500px, 500px) scale(0.5); /* 끝 위치 */
+    }
+}
