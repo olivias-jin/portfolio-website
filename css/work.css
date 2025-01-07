@@ -251,5 +251,9 @@ a:active {
 }
 
 .project-container p {
+<<<<<<< HEAD
   margin-top: 10px; /* <p> 태그가 이미지 아래로 내려가도록 여백 추가 */
+=======
+  margin-top: 10px; /* <p> 태그가 이미지 아래로 내려가도록 여백 추가. */
+>>>>>>> d843c499f508faaaa12a5d39ff84d53ef5f8a31a
 }
