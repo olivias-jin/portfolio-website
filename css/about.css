@@ -1,6 +1,19 @@
 /* 그라데이션 효과 */
 body {
   background: linear-gradient(to bottom, #050405, #140c33);
+  margin: 0;
+  /* Prevents margins from affecting layout */
+  padding: 0;
+  flex-grow: 1;
+
+}
+
+html {
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #mylogo {
@@ -9,10 +22,12 @@ body {
   width: 200px;
   height: 70px;
 }
+
 .logo {
   width: 150px;
   height: auto;
 }
+
 .navigation {
   margin-top: -60px;
   padding: 0px;
@@ -53,31 +68,50 @@ a:active {
 }
 
 
-.social {
+.social.icon {
   margin-bottom: 100px;
   text-align: center;
+  margin: 0 10px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.social.icon a {
+  margin: 0 10px;
+}
+
+.social.icon img {
+  width: 40px;
+  /* Adjust the size of the icons */
+}
+
+.about h1 {
+  text-align: center;
+  font-family: Optima, sans-serif;
+  color: #C8ACD6;
+}
+
+.about p {
+  text-align: center;
+  font-family: Optima, sans-serif;
+  color: white;
+}
+
+.about h2 {
+  text-align: center;
+  font-family: Optima, sans-serif;
+  color: #C8ACD6;
+}
+
+.page-footer {
+  position: fixed;
   bottom: 0;
-}
-
-.about h1{
-  text-align: center;
-  font-family: Optima, sans-serif;
-  color: #C8ACD6;
-}
-
-.about p{
-  text-align: center;
-  font-family: Optima, sans-serif;
+  left: 0;
+  width: 100%;
   color: white;
-}
-
-.about h2{
   text-align: center;
-  font-family: Optima, sans-serif;
-  color: #C8ACD6;
-}
-.page-footer{
-  color: white;
+  padding: 10px 0;
+
 }
 
 .table {
@@ -86,8 +120,13 @@ a:active {
   color: white;
 }
 
+.CV-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;     /* Vertically center */
+}
+
 .CV {
-  display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -96,18 +135,20 @@ a:active {
   outline: none;
   border: none;
   border-radius: 5px;
+  background-color: #dcb7ff;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
 }
-
 
 .CV:hover {
   background-color: rgb(206, 157, 252);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s; /* 효과 전환 */
+ 
 }
 
 .CV:active {
   background-color: rgb(206, 157, 252);
-  transition: background-color 0.3s, transform 0.3s; /* 효과 전환 */
+
   box-shadow: none;
 }
 
@@ -126,10 +167,12 @@ a:active {
     width: 1px;
     height: 1px;
   }
+
   &2 {
     width: 2px;
     height: 2px;
   }
+
   &3 {
     width: 3px;
     height: 3px;
@@ -140,9 +183,11 @@ a:active {
   &1 {
     opacity: 1;
   }
+
   &2 {
     opacity: 0.5;
   }
+
   &3 {
     opacity: 0.1;
   }
@@ -153,14 +198,17 @@ a:active {
     animation-duration: 0.5s;
     animation-name: twinkling;
   }
+
   &2 {
     animation-duration: 1s;
     animation-name: twinkling;
   }
+
   &3 {
     animation-duration: 1.5s;
     animation-name: twinkling;
   }
+
   &4 {
     animation-duration: 2s;
     animation-name: twinklingWithNoBoxShadow;
@@ -186,14 +234,17 @@ a:active {
     background-color: #ffffff;
     box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
   }
+
   20% {
     background-color: #ffc4c4;
     box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
   }
+
   80% {
     background-color: #c4cfff;
     box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
   }
+
   100% {
     background-color: #ffffff;
     box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);

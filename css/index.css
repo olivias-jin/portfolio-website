@@ -9,7 +9,19 @@
 /* 그라데이션 효과 .*/
 body {
     background: linear-gradient(to bottom, #050405, #140c33);
+    margin: 0;  /* Prevents margins from affecting layout */
+    padding: 0;
+    
 }
+
+html {
+  height: 100%;  /* Ensure the background spans the full height */
+  margin: 0;
+  padding: 0;
+  
+}
+
+
 
 #mylogo {
     margin-top: 40px;
@@ -64,17 +76,29 @@ body {
     margin-right: auto;
 }
 
-.find {
+.find.me {
     margin-top: 300px;
     text-align: center;
     font-family: Optima, sans-serif;
     font-size: 15px;
     font-weight: bold;
+    margin: 0;
 }
 
-.social {
+.social.icon{
     margin-bottom: 100px;
     text-align: center;
+    margin:  0 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.social.icon a {
+  margin: 0 10px;
+}
+
+.social.icon img {
+  width: 40px; /* Adjust the size of the icons */
 }
 
 /* 링크 스타일 */
@@ -97,7 +121,14 @@ a:active {
 
 
 .page-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   color: white;
+  text-align: center;
+  padding: 10px 0;
+  
 }
 
 /* 기본 버튼 스타일 */
@@ -229,7 +260,7 @@ a:active {
     background-color: white;
     border-radius: 50%;
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8); /* 빛나는 효과 */
-    opacity: 0;
+    opacity: 1;
     animation: shooting 1s ease-out forwards; /* 별동별 애니메이션 */
 }
 

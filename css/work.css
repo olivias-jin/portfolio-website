@@ -1,6 +1,20 @@
 /* 그라데이션 효과 */
 body {
   background: linear-gradient(to bottom, #050405, #140c33);
+  margin: 0;
+  /* Prevents margins from affecting layout */
+  padding: 0 0 60px 0;
+  flex-grow: 1;
+
+}
+
+html {
+  height: 100%;
+  /* Ensure the background spans the full height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #mylogo {
@@ -71,26 +85,41 @@ a:active {
   color: rgb(255, 0, 157);
 }
 
-.find {
+.find.me {
   margin-top: 300px;
-  /* margin-bottom: 100px; */
   text-align: center;
   font-family: Optima, sans-serif;
   font-size: 15px;
   font-weight: bold;
-  bottom: 0;
+  margin: 0;
 
 }
 
-.social {
+.social.icon{
   margin-bottom: 100px;
   text-align: center;
-  bottom: 0;
+  margin:  0 10px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.social.icon a {
+margin: 0 10px;
+}
+
+.social.icon img {
+width: 40px; /* Adjust the size of the icons */
 }
 
 .page-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   color: white;
-}
+  text-align: center;
+  padding: 10px 0;
+ }
 
 .mywork {
   display: grid;
@@ -102,8 +131,10 @@ a:active {
 #container {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; /* 요소가 줄 바꿈되도록 설정 */
-  justify-content: space-between; /* 아이템들 사이에 간격을 균등하게 분배 */
+  flex-wrap: wrap;
+  /* 요소가 줄 바꿈되도록 설정 */
+  justify-content: space-between;
+  /* 아이템들 사이에 간격을 균등하게 분배 */
 
 }
 
@@ -236,14 +267,18 @@ a:active {
 
 .project-container {
   display: flex;
-  flex-direction: column; /* 세로로 정렬되도록 설정 */
-  align-items: center; /* 가운데 정렬 */
+  flex-direction: column;
+  /* 세로로 정렬되도록 설정 */
+  align-items: center;
+  /* 가운데 정렬 */
   text-align: center;
 }
 
 .project-image {
-  width: 30px; /* 이미지 크기 조정 */
-  height: auto; /* 비율에 맞게 높이 자동 조정 */
+  width: 30px;
+  /* 이미지 크기 조정 */
+  height: auto;
+  /* 비율에 맞게 높이 자동 조정 */
 }
 
 .project-container div {
@@ -251,9 +286,9 @@ a:active {
 }
 
 .project-container p {
-<<<<<<< HEAD
-  margin-top: 10px; /* <p> 태그가 이미지 아래로 내려가도록 여백 추가 */
-=======
-  margin-top: 10px; /* <p> 태그가 이미지 아래로 내려가도록 여백 추가. */
->>>>>>> d843c499f508faaaa12a5d39ff84d53ef5f8a31a
+  <<<<<<< HEAD margin-top: 10px;
+  /* <p> 태그가 이미지 아래로 내려가도록 여백 추가 */
+  =======margin-top: 10px;
+  /* <p> 태그가 이미지 아래로 내려가도록 여백 추가. */
+  >>>>>>>d843c499f508faaaa12a5d39ff84d53ef5f8a31a
 }
