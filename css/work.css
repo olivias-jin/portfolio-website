@@ -61,23 +61,26 @@ a:active {
 
 /* 기본 버튼 스타일 */
 .button {
+  justify-content: center;
   display: inline-block;
-  background-color: #dcb7ff;
+  background-color: #442f96;
   /* 버튼 색상 */
   color: white !important;
   /* 텍스트 색상 */
-  padding: 10px 20px;
+  padding: 5px 20px;
   /* 버튼 안의 여백 */
   text-align: center;
   /* 텍스트 중앙 정렬 */
   text-decoration: none;
   /* 링크의 기본 밑줄 제거 */
-  border-radius: 12px;
+  border-radius: 10px;
   /* 둥근 모서리 */
   font-size: 16px;
   /* 폰트 크기 */
   transition: background-color 0.3s, transform 0.3s;
   /* 효과 전환 */
+  margin: 1px;
+  /* 버튼과 버튼사이 간격격 */
 }
 
 /* 마우스 오버 시 스타일 */
@@ -99,20 +102,21 @@ a:active {
 
 }
 
-.social.icon{
+.social.icon {
   margin-bottom: 100px;
   text-align: center;
-  margin:  0 10px;
+  margin: 0 10px;
   margin-top: 5px;
   display: inline-block;
 }
 
 .social.icon a {
-margin: 0 10px;
+  margin: 0 10px;
 }
 
 .social.icon img {
-width: 40px; /* Adjust the size of the icons */
+  width: 40px;
+  /* Adjust the size of the icons */
 }
 
 .page-footer {
@@ -124,6 +128,7 @@ width: 40px; /* Adjust the size of the icons */
   padding: 10px 0;
 
 }
+
 .mywork {
   display: grid;
   text-align: center;
@@ -138,22 +143,42 @@ width: 40px; /* Adjust the size of the icons */
   /* 요소가 줄 바꿈되도록 설정 */
   justify-content: space-between;
   /* 아이템들 사이에 간격을 균등하게 분배 */
+  
 
 }
 
+.project-img {
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  border: 1px;
+}
+
+
+
+
+#container h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+
+
+#container p {
+  margin: 10px;
+}
 #container div {
   font-family: Optima, sans-serif;
   box-sizing: border-box;
-  text-align: center;
-  border: 5px solid rgb(222, 205, 226);
+  /* text-align: center; */
+  border: 1px solid #ddd;
   margin: 10px;
   min-height: 200px;
   flex-basis: 200px;
   flex-grow: 1;
-  background-color: rgba(222, 205, 226);
+  background-color: #f9f9f9;
   flex-shrink: 1;
-  align-items: center;
-
+  /* align-items: center; */
   border-radius: 15px;
 }
 
@@ -289,9 +314,9 @@ width: 40px; /* Adjust the size of the icons */
 }
 
 .project-container p {
-  <<<<<<< HEAD margin-top: 10px;
+  margin-top: 10px;
   /* <p> 태그가 이미지 아래로 내려가도록 여백 추가 */
-  =======margin-top: 10px;
+  margin-top: 10px;
   /* <p> 태그가 이미지 아래로 내려가도록 여백 추가. */
-  >>>>>>>d843c499f508faaaa12a5d39ff84d53ef5f8a31a
+
 }
