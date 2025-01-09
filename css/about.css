@@ -4,12 +4,12 @@ body {
   margin: 0;
   /* Prevents margins from affecting layout */
   padding: 0;
-  flex-grow: 1;
-
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 html {
-
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,31 +28,47 @@ html {
   height: auto;
 }
 
+/* my image  */
+.myimage img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+
+/* 링크 스타일 */
 .navigation {
   margin-top: -60px;
+  margin-right: 20px;
   padding: 0px;
   text-align: right;
   font-family: Optima, sans-serif;
   font-weight: bold;
   word-spacing: 10px;
-
 }
 
-//* 링크 스타일 */
+
 a:link {
   color: white;
+  text-decoration: none;
 }
 
 a:visited {
   color: white;
 }
 
+/* mouse over link */
 a:hover {
-  color: rgb(206, 157, 252);
+  color: rgb(111, 52, 165);
+  transition: background-color 0.3s, transform 0.3s;
+  /* 효과 전환 */
 }
 
+/* selected link */
 a:active {
-  color: rgb(255, 0, 157);
+  color: rgb(75, 75, 141);
 }
 
 
@@ -60,7 +76,7 @@ a:active {
   margin-top: 300px;
   /* margin-bottom: 100px; */
   text-align: center;
-  font-family: Optima, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: bold;
   bottom: 0;
@@ -85,26 +101,90 @@ a:active {
   /* Adjust the size of the icons */
 }
 
-.about h1 {
+
+.about-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  min-height: 70vh;
   text-align: center;
-  font-family: Optima, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    /* 큰 화면에서는 가로 정렬 */
+    text-align: left;
+    /* 텍스트 왼쪽 정렬 */
+  }
+}
+
+.about-text h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
   color: #C8ACD6;
 }
 
-.about p {
-  text-align: center;
-  font-family: Optima, sans-serif;
+.about-text p {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
 .about h2 {
   text-align: center;
-  font-family: Optima, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #C8ACD6;
+  font-weight: bold;
 }
 
+
+/* Skills logo icon css */
+.skills .logo_icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.skills .logo_icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  /* 이미지 비율 유지지 */
+}
+
+.skills .logo_icon div {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  align-items: center;
+  justify-content: center; /* 가로 정렬 */
+  width: 70px; /* 상자의 너비 */
+  height: 70px; /* 상자의 높이 */
+  border: 1px solid #ddd; /* 상자의 테두리 */
+  border-radius: 10px;  /* 모서리 둥글게 */
+  background-color: #f9f9f9; /* 상자의 배경색 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  padding: 10px; /* 내부 여백 */
+}
+
+.skills .logo_icon div span {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
 .page-footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -114,16 +194,14 @@ a:active {
 
 }
 
-.table {
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
 
 .CV-container {
+  margin-top: 20px;
   display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center;     /* Vertically center */
+  justify-content: center;
+  /* Horizontally center */
+  align-items: center;
+  /* Vertically center */
 }
 
 .CV {
@@ -143,7 +221,7 @@ a:active {
 .CV:hover {
   background-color: rgb(206, 157, 252);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- 
+
 }
 
 .CV:active {

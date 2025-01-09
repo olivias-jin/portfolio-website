@@ -5,12 +5,10 @@ body {
   /* Prevents margins from affecting layout */
   padding: 0 0 60px 0;
   flex-grow: 1;
-
+  min-height: 100vh;
 }
 
 html {
-  height: 100%;
-  /* Ensure the background spans the full height */
   margin: 0;
   padding: 0;
   display: flex;
@@ -31,13 +29,35 @@ html {
 
 .navigation {
   margin-top: -60px;
+  margin-right: 20px;
   padding: 0px;
   text-align: right;
   font-family: Optima, sans-serif;
   font-weight: bold;
   word-spacing: 10px;
-
 }
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(111, 52, 165);
+  transition: background-color 0.3s, transform 0.3s;
+  /* 효과 전환 */
+}
+
+/* selected link */
+a:active {
+  color: rgb(75, 75, 141);
+}
+
 
 /* 기본 버튼 스타일 */
 .button {
@@ -68,22 +88,6 @@ html {
   /* 마우스 오버 시 크기 증가 */
 }
 
-/* 링크 스타일 */
-a:link {
-  color: white;
-}
-
-a:visited {
-  color: white;
-}
-
-a:hover {
-  color: rgb(206, 157, 252);
-}
-
-a:active {
-  color: rgb(255, 0, 157);
-}
 
 .find.me {
   margin-top: 300px;
@@ -112,15 +116,14 @@ width: 40px; /* Adjust the size of the icons */
 }
 
 .page-footer {
-  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
   color: white;
   text-align: center;
   padding: 10px 0;
- }
 
+}
 .mywork {
   display: grid;
   text-align: center;
