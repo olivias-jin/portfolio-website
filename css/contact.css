@@ -150,6 +150,28 @@ input[type="submit"]:hover {
   color: white;
 }
 
+/* 기본 버튼 스타일 */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #442f96;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* 마우스 오버 시 스타일 */
+.button:hover {
+  background-color: #a06bff;
+  /* 마우스 오버 시 배경 색상 변화 */
+  transform: scale(1.1);
+  /* 마우스 오버 시 크기 증가 */
+}
 
 
 /* 별 애니메이션을 위한 컨테이너 */
